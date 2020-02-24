@@ -214,6 +214,7 @@ git config --global user.email "arifrgilang@gmail.com"
 
 ```text
 cd FolderDevcom
+git status
 git init
 git remote add origin https://gitlab.com/arifrgilang/latihan-devcom.git
 git add print.cpp
@@ -242,6 +243,7 @@ git push -u origin master
 ```text
 // before pushing, ALWAYS DO THIS!
 
+git fetch
 git status
 git pull
 ```
