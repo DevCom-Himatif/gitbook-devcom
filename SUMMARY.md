@@ -8,6 +8,10 @@
 * [Himatif Apps - 2019](produk/himatif-apps.md)
 * [CBS Website - 2017](produk/cbs-website.md)
 
+## Material
+
+* [Developer Starter Pack](material/developer-starter-pack.md)
+
 ## Laporan
 
 * [Devcom 2020 - Arif R. Gilang P.](laporan/2020.md)

@@ -14,11 +14,11 @@ description: >-
 
 ## Tampilan Antarmuka
 
-![Logo dari Himatif Apps](../.gitbook/assets/image%20%285%29.png)
+![Logo dari Himatif Apps](../.gitbook/assets/image%20%2812%29.png)
 
-![Halaman Depan](../.gitbook/assets/image%20%2811%29.png)
+![Halaman Depan](../.gitbook/assets/image%20%2825%29.png)
 
-![Database Himatif Biro ADK](../.gitbook/assets/image%20%281%29.png)
+![Database Himatif Biro ADK](../.gitbook/assets/image%20%285%29.png)
 
-![Materi dari Departemen Keilmuan](../.gitbook/assets/image%20%2812%29.png)
+![Materi dari Departemen Keilmuan](../.gitbook/assets/image%20%2826%29.png)
 

@@ -16,11 +16,11 @@ description: Aplikasi Character Building Season Himatif FMIPA Unpad
 
 ## Tampilan Antarmuka
 
-![Halaman Depan](../.gitbook/assets/image%20%286%29.png)
+![Halaman Depan](../.gitbook/assets/image%20%2815%29.png)
 
-![Halaman Keluarga Himatif](../.gitbook/assets/image%20%2814%29.png)
+![Halaman Keluarga Himatif](../.gitbook/assets/image%20%2828%29.png)
 
-![Halaman Profil](../.gitbook/assets/image%20%2815%29.png)
+![Halaman Profil](../.gitbook/assets/image%20%2829%29.png)
 
 
 
