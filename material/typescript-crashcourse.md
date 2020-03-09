@@ -85,7 +85,6 @@ return i * i;
 Return type inferred
 
 ```text
-```
 let f2 = function (i: number) {
   return i * i;
 }
@@ -400,19 +399,20 @@ let list = [4, 5, 6];
 for (const i of list) {
   console.log(i); // 4, 5, 6
 }
+
+let arrayOfAnyType = [1, 'string', false];
+
+for (const val of arrayOfAnyType) { 
+  console.log(val); // 1, 'string', false 
+}
+
+let list = [4, 5, 6];
+for (const i of list) { console.log(i); // 4, 5, 6 }
 ```
 
-let arrayOfAnyType = \[1, 'string', false\];
-
-for \(const val of arrayOfAnyType\) { console.log\(val\); // 1, 'string', false }
-
-let list = \[4, 5, 6\];
-
-for \(const i of list\) { console.log\(i\); // 4, 5, 6 }
+* `for..in` statement. Iterate over the list of **keys** on the object being iterated.
 
 ```text
-* `for..in` statement. Iterate over the list of **keys** on the object being iterated.
-```ts
 for (const i in list) {
    console.log(i);    // 0, 1, 2
 }
@@ -420,21 +420,22 @@ for (const i in list) {
 
 * Higher order functions
 
-  \`\`\`ts
+```text
+let arrayOfAnyType = [1, 'string', false];
+arrayOfAnyType.forEach(i => console.log(i)); // 1, 'string', false
+const names = ['Ujang', 'Supardi', 'Wawan'] 
+names.forEach((name: string) => { 
+    console.log(Halo, selamat datang ${name}); 
+})
+```
 
-  let arrayOfAnyType = \[1, 'string', false\];
 
-arrayOfAnyType.forEach\(i =&gt; console.log\(i\)\); // 1, 'string', false
 
-const names = \['Ujang', 'Supardi', 'Wawan'\] names.forEach\(\(name: string\) =&gt; { console.log\(`Halo, selamat datang ${name}`\); }\)
+### More Types
+
+* Union Type \(`|`\)
 
 ```text
----
-
-## More Types
-
-* Union Types (`|`)
-```ts
 let code: string | number;
 code = 123;     // ok
 code = 'ABC';   // ok
@@ -443,19 +444,26 @@ code = false;   // compiler error
 
 * Intersection Types \(`&`\)
 
-  \`\`\`ts
+```text
+interface Animal {
+    kind: string;
+}
 
-  interface Animal {
+interface Person { 
+    firstName: string; lastName: string; age: number; 
+}
 
-  kind: string;
+interface Employee { 
+    employeeCode: string; 
+}
 
-  }
+let employee: Animal & Person & Employee = { 
+    kind: 'human', 
+    firstName: 'Jane', 
+    lastName: 'Smith', 
+    age: 20, 
+    employeeCode: '123' 
+}
 
-interface Person { firstName: string; lastName: string; age: number; }
-
-interface Employee { employeeCode: string; }
-
-let employee: Animal & Person & Employee = { kind: 'human', firstName: 'Jane', lastName: 'Smith', age: 20, employeeCode: '123' }
-
-\`\`\`
+```
 
